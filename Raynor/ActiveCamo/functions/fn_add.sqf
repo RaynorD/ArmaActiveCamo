@@ -4,7 +4,7 @@ if (isNull _object) exitWith {
     [format ["Object was null: %1",_this],true] call RaynorActiveCamo_fnc_log;
 };
 
-private _renderIndex = count RaynorActiveCamo_db;
+private _renderIndex = count RaynorActiveCamo_objects;
 RaynorActiveCamo_objects pushBack _object;
 
 private _rttName = format ["RaynorActiveCamo_rtt%1",_renderIndex];
@@ -25,8 +25,8 @@ if (count _textureSlots < 1) exitWith {
     [format ["Object has camo slots: (%1)",_object],true] call RaynorActiveCamo_fnc_log;
 };
 
-private _tgtCenterModel = getPosASL _target;
-_tgtCenterModel set [2,_tgtCenterModel#2 + ((boundingCenter _target) select 2)];
+private _modelCenter = getPosASL _object;
+_modelCenter set [2,_modelCenter#2 + ((boundingCenter _object) select 2)];
 
 // save data locally
 if(isNil {_object getVariable "RaynorActiveCamo_on"}) then { // global, don't overwrite if JIP
@@ -34,6 +34,8 @@ if(isNil {_object getVariable "RaynorActiveCamo_on"}) then { // global, don't ov
 };
 _object setVariable ["RaynorActiveCamo_rttName", _rttName];
 _object setVariable ["RaynorActiveCamo_textureSlots", _textureSlots];
+_object setVariable ["RaynorActiveCamo_modelCenter", _modelCenter];
+_object setVariable ["RaynorActiveCamo_localState", false];
 
 private _conditionOff = "_target getVariable ['RaynorActiveCamo_on',false]";
 private _conditionOn = format ["!(%1)",_conditionOff];

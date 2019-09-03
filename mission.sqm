@@ -8,14 +8,14 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=43;
+		nextID=49;
 	};
 	class Camera
 	{
-		pos[]={14674.022,24.210918,16729.281};
-		dir[]={0.16629538,-0.29037666,-0.94244546};
-		up[]={0.050463546,0.95690674,-0.28599396};
-		aside[]={-0.98486757,1.2214878e-007,-0.17377967};
+		pos[]={14667.342,25.634348,16731.691};
+		dir[]={0.67935795,-0.31822544,-0.66135156};
+		up[]={0.2280442,0.94800955,-0.22200033};
+		aside[]={-0.69760567,3.434252e-008,-0.71659839};
 	};
 };
 binarizationWanted=0;
@@ -85,7 +85,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=4;
+		items=6;
 		class Item0
 		{
 			dataType="Group";
@@ -170,8 +170,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14681.769,17.911438,16707.781};
-						angles[]={0,0.71972144,0};
+						position[]={14681.771,17.911434,16707.785};
+						angles[]={-0,5.4555249,0};
 					};
 					side="West";
 					flags=6;
@@ -181,14 +181,15 @@ class Mission
 					};
 					id=19;
 					type="B_Helipilot_F";
+					atlOffset=-3.8146973e-006;
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14681.769,17.911438,16707.781};
-						angles[]={0,0.71972144,0};
+						position[]={14681.771,17.911434,16707.785};
+						angles[]={-0,5.4555249,0};
 					};
 					side="West";
 					flags=4;
@@ -197,14 +198,15 @@ class Mission
 					};
 					id=20;
 					type="B_Helipilot_F";
+					atlOffset=-3.8146973e-006;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14681.769,17.911438,16707.781};
-						angles[]={0,0.71972144,0};
+						position[]={14681.771,17.911434,16707.785};
+						angles[]={-0,5.4555249,0};
 					};
 					side="West";
 					flags=4;
@@ -214,14 +216,15 @@ class Mission
 					};
 					id=21;
 					type="B_helicrew_F";
+					atlOffset=-3.8146973e-006;
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14681.769,17.911438,16707.781};
-						angles[]={0,0.71972144,0};
+						position[]={14681.771,17.911434,16707.785};
+						angles[]={-0,5.4555249,0};
 					};
 					side="West";
 					flags=4;
@@ -230,6 +233,7 @@ class Mission
 					};
 					id=22;
 					type="B_helicrew_F";
+					atlOffset=-3.8146973e-006;
 				};
 				class Item4
 				{
@@ -322,7 +326,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14681.771,20.049255,16707.734};
-				angles[]={0,0.71972144,0};
+				angles[]={-0,5.4555249,0};
 			};
 			side="West";
 			flags=6;
@@ -373,6 +377,180 @@ class Mission
 			};
 			id=42;
 			type="Land_HelipadCircle_F";
+		};
+		class Item4
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14693.147,17.911438,16720.871};
+						angles[]={-0,5.4555249,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						name="uh80D_1";
+					};
+					id=44;
+					type="B_Helipilot_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14693.147,17.911438,16720.871};
+						angles[]={-0,5.4555249,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=45;
+					type="B_Helipilot_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14693.147,17.911438,16720.871};
+						angles[]={-0,5.4555249,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						name="uh80G_1";
+					};
+					id=46;
+					type="B_helicrew_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14693.147,17.911438,16720.871};
+						angles[]={-0,5.4555249,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=47;
+					type="B_helicrew_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=4;
+				};
+				class Links
+				{
+					items=4;
+					class Item0
+					{
+						linkID=0;
+						item0=44;
+						item1=48;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=45;
+						item1=48;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+					class Item2
+					{
+						linkID=2;
+						item0=46;
+						item1=48;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={1};
+						};
+					};
+					class Item3
+					{
+						linkID=3;
+						item0=47;
+						item1=48;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={2};
+						};
+					};
+				};
+			};
+			id=43;
+		};
+		class Item5
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14693.147,20.049259,16720.82};
+				angles[]={-0,5.4555249,0};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				init="call{[this] call RaynorActiveCamo_fnc_add;}";
+				name="uh80_1";
+			};
+			id=48;
+			type="B_Heli_Transport_01_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""arifle_MXC_F"",""FirstAidKit"",""Medikit""],[2,8,1]],[[""SmokeShell"",""SmokeShellBlue"",""30Rnd_65x39_caseless_mag""],[2,2,4]],[[""ToolKit"",""ItemGPS""],[1,1]],[[""B_Parachute""],[8]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };

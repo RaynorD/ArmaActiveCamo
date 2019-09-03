@@ -5,6 +5,8 @@ onLoadName          = "Raynor's Active Camo";
 onLoadMission       = "Raynor's Active Camo";
 onLoadIntro         = "Raynor's Active Camo";
 
+allowFunctionsRecompile = 1;
+
 class CfgFunctions {
     #include "Raynor\ActiveCamo\CfgFunctions.hpp"
 };

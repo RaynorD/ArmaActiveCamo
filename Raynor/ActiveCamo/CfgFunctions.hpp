@@ -3,6 +3,7 @@ class RaynorActiveCamo {
         file = "Raynor\ActiveCamo\functions";
         class add {};
         class eh_draw3d {};
+        class eh_publicVariable {};
         class log {};
         class off {};
         class on {};
