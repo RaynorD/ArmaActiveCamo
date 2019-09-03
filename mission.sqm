@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14672.812,25.110723,16729.865};
-		dir[]={0.43559003,-0.34050915,-0.83334357};
-		up[]={0.15774755,0.94023401,-0.3017931};
-		aside[]={-0.88629478,8.7660737e-008,-0.46326494};
+		pos[]={14674.022,24.210918,16729.281};
+		dir[]={0.30618218,-0.30793667,-0.90089059};
+		up[]={0.099101298,0.95140177,-0.29159039};
+		aside[]={-0.94688916,1.207809e-007,-0.32181457};
 	};
 };
 binarizationWanted=0;
@@ -171,7 +171,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14681.769,17.911438,16707.781};
-						angles[]={-0,0.71972144,0};
+						angles[]={0,0.71972144,0};
 					};
 					side="West";
 					flags=6;
@@ -188,7 +188,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14681.769,17.911438,16707.781};
-						angles[]={-0,0.71972144,0};
+						angles[]={0,0.71972144,0};
 					};
 					side="West";
 					flags=4;
@@ -204,7 +204,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14681.769,17.911438,16707.781};
-						angles[]={-0,0.71972144,0};
+						angles[]={0,0.71972144,0};
 					};
 					side="West";
 					flags=4;
@@ -221,7 +221,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14681.769,17.911438,16707.781};
-						angles[]={-0,0.71972144,0};
+						angles[]={0,0.71972144,0};
 					};
 					side="West";
 					flags=4;
@@ -314,6 +314,7 @@ class Mission
 				};
 			};
 			id=17;
+			atlOffset=-3.8146973e-006;
 		};
 		class Item2
 		{
@@ -321,16 +322,18 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14681.771,20.049255,16707.734};
-				angles[]={-0,0.71972144,0};
+				angles[]={0,0.71972144,0};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
+				init="call{[this] call RaynorActiveCamo_fnc_add;}";
 				name="uh80";
 			};
 			id=18;
 			type="B_Heli_Transport_01_F";
+			atlOffset=-3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
