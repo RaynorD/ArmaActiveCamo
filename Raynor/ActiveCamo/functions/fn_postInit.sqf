@@ -1,5 +1,3 @@
-
-
 // JIP player activate current camo objects
 
-// addPublicVariableEventHandler code
+// server addPublicVariableEventHandler code

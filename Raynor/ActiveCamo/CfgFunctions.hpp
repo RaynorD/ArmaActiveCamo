@@ -6,7 +6,8 @@ class RaynorActiveCamo {
         class log {};
         class off {};
         class on {};
-        class postinit {postInit = 1;};
+        class postInit {postInit = 1;};
+        class preInit {preInit = 1;};
         class userAction {};
     };
 };
