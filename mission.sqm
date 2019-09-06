@@ -1,55 +1,71 @@
 version=53;
 class EditorData
 {
-	moveGridStep=1;
+	moveGridStep=4;
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=9;
+	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=49;
+		nextID=101;
 	};
 	class Camera
 	{
-		pos[]={14667.342,25.634348,16731.691};
-		dir[]={0.67935795,-0.31822544,-0.66135156};
-		up[]={0.2280442,0.94800955,-0.22200033};
-		aside[]={-0.69760567,3.434252e-008,-0.71659839};
+		pos[]={15209.118,36.23465,16737.945};
+		dir[]={-0.88449985,-0.46115664,-0.070855618};
+		up[]={-0.45968741,0.88731897,-0.036824405};
+		aside[]={-0.079852648,1.040753e-007,0.99681586};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Characters_F",
-	"A3_Air_F_Beta_Heli_Transport_01",
-	"A3_Structures_F_Mil_Helipads"
+	"rhsusf_c_troops",
+	"A3_Misc_F_Helpers",
+	"A3_Structures_F_Heli_VR_Helpers",
+	"A3_Modules_F_Curator_Curator",
+	"rhsusf_c_melb"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=3;
+		items=5;
 		class Item0
 		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
+			className="rhsusf_c_troops";
+			name="RHSUSF Infantry & Equipment";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 		class Item1
 		{
-			className="A3_Air_F_Beta";
-			name="Arma 3 Beta - Aircraft";
+			className="A3_Misc_F";
+			name="Arma 3 - 3D Aids and Helpers";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
 		class Item2
 		{
-			className="A3_Structures_F_Mil";
-			name="Arma 3 - Military Buildings and Structures";
+			className="A3_Structures_F_Heli";
+			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
+			className="rhsusf_c_melb";
+			name="MELB";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 	};
 };
@@ -85,179 +101,48 @@ class Mission
 	};
 	class Entities
 	{
-		items=6;
+		items=4;
 		class Item0
 		{
 			dataType="Group";
 			side="West";
 			class Entities
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14676.133,17.911438,16717.125};
-						angles[]={0,2.3231487,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						isPlayer=1;
-					};
-					id=1;
-					type="B_Soldier_A_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.97000003;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=0;
-		};
-		class Item1
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=6;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14681.771,17.911434,16707.785};
-						angles[]={-0,5.4555249,0};
+						position[]={15179.697,17.908438,16738.773};
+						angles[]={0,3.9068322,0};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
-						name="uh80D";
+						isPlayer=1;
 					};
-					id=19;
-					type="B_Helipilot_F";
-					atlOffset=-3.8146973e-006;
+					id=99;
+					type="rhsusf_army_ucp_helipilot";
+					atlOffset=-0.0030002594;
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14681.771,17.911434,16707.785};
-						angles[]={-0,5.4555249,0};
+						position[]={15179.697,17.908438,16738.773};
+						angles[]={0,3.9068322,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 					};
-					id=20;
-					type="B_Helipilot_F";
-					atlOffset=-3.8146973e-006;
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14681.771,17.911434,16707.785};
-						angles[]={-0,5.4555249,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						name="uh80G";
-					};
-					id=21;
-					type="B_helicrew_F";
-					atlOffset=-3.8146973e-006;
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14681.771,17.911434,16707.785};
-						angles[]={-0,5.4555249,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-					};
-					id=22;
-					type="B_helicrew_F";
-					atlOffset=-3.8146973e-006;
-				};
-				class Item4
-				{
-					dataType="Waypoint";
-					position[]={14846.82,17.905111,16544.516};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=29;
-					type="Move";
-					atlOffset=-5.7220459e-006;
-				};
-				class Item5
-				{
-					dataType="Waypoint";
-					position[]={14698.88,17.91,16729.094};
-					type="Land";
-					script="A3\functions_f\waypoints\fn_wpLand.sqf";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=30;
+					id=100;
+					type="rhsusf_army_ucp_helipilot";
+					atlOffset=-0.0030002594;
 				};
 			};
 			class Attributes
@@ -267,16 +152,16 @@ class Mission
 			{
 				class LinkIDProvider
 				{
-					nextID=4;
+					nextID=2;
 				};
 				class Links
 				{
-					items=4;
+					items=2;
 					class Item0
 					{
 						linkID=0;
-						item0=19;
-						item1=18;
+						item0=99;
+						item1=98;
 						class CustomData
 						{
 							role=1;
@@ -285,65 +170,50 @@ class Mission
 					class Item1
 					{
 						linkID=1;
-						item0=20;
-						item1=18;
+						item0=100;
+						item1=98;
 						class CustomData
 						{
 							role=2;
 							turretPath[]={0};
 						};
 					};
-					class Item2
-					{
-						linkID=2;
-						item0=21;
-						item1=18;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={1};
-						};
-					};
-					class Item3
-					{
-						linkID=3;
-						item0=22;
-						item1=18;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={2};
-						};
-					};
 				};
 			};
-			id=17;
-			atlOffset=-3.8146973e-006;
+			id=0;
+			atlOffset=-0.0030002594;
 		};
-		class Item2
+		class Item1
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14681.771,20.049255,16707.734};
-				angles[]={-0,5.4555249,0};
+				position[]={14660.153,17.91,16804.625};
 			};
-			side="West";
-			flags=6;
+			side="Empty";
+			flags=4;
 			class Attributes
 			{
-				init="call{[this] call RaynorActiveCamo_fnc_add;}";
-				name="uh80";
 			};
-			id=18;
-			type="B_Heli_Transport_01_F";
-			atlOffset=-3.8146973e-006;
+			id=65;
+			type="Sign_Sphere25cm_F";
+		};
+		class Item2
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14712,17.909912,16772};
+			};
+			id=71;
+			type="ModuleCurator_F";
+			atlOffset=-8.7738037e-005;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
 					class Value
 					{
 						class data
@@ -355,11 +225,68 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[""arifle_MXC_F"",""FirstAidKit"",""Medikit""],[2,8,1]],[[""SmokeShell"",""SmokeShellBlue"",""30Rnd_65x39_caseless_mag""],[2,2,4]],[[""ToolKit"",""ItemGPS""],[1,1]],[[""B_Parachute""],[8]]],false]";
+							value="unit1";
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item3
@@ -367,167 +294,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14698.88,17.91,16729.094};
-				angles[]={0,5.4702892,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=42;
-			type="Land_HelipadCircle_F";
-		};
-		class Item4
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=4;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14693.147,17.911438,16720.871};
-						angles[]={-0,5.4555249,0};
-					};
-					side="West";
-					flags=6;
-					class Attributes
-					{
-						name="uh80D_1";
-					};
-					id=44;
-					type="B_Helipilot_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14693.147,17.911438,16720.871};
-						angles[]={-0,5.4555249,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-					};
-					id=45;
-					type="B_Helipilot_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14693.147,17.911438,16720.871};
-						angles[]={-0,5.4555249,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						name="uh80G_1";
-					};
-					id=46;
-					type="B_helicrew_F";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14693.147,17.911438,16720.871};
-						angles[]={-0,5.4555249,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-					};
-					id=47;
-					type="B_helicrew_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			class CrewLinks
-			{
-				class LinkIDProvider
-				{
-					nextID=4;
-				};
-				class Links
-				{
-					items=4;
-					class Item0
-					{
-						linkID=0;
-						item0=44;
-						item1=48;
-						class CustomData
-						{
-							role=1;
-						};
-					};
-					class Item1
-					{
-						linkID=1;
-						item0=45;
-						item1=48;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={0};
-						};
-					};
-					class Item2
-					{
-						linkID=2;
-						item0=46;
-						item1=48;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={1};
-						};
-					};
-					class Item3
-					{
-						linkID=3;
-						item0=47;
-						item1=48;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={2};
-						};
-					};
-				};
-			};
-			id=43;
-		};
-		class Item5
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14693.147,20.049259,16720.82};
-				angles[]={-0,5.4555249,0};
+				position[]={15179.697,19.847174,16738.723};
+				angles[]={0,3.9068322,0};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
 				init="call{[this] call RaynorActiveCamo_fnc_add;}";
-				name="uh80_1";
 			};
-			id=48;
-			type="B_Heli_Transport_01_F";
+			id=98;
+			type="RHS_MELB_AH6M";
+			atlOffset=-0.0030002594;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -545,7 +323,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[""arifle_MXC_F"",""FirstAidKit"",""Medikit""],[2,8,1]],[[""SmokeShell"",""SmokeShellBlue"",""30Rnd_65x39_caseless_mag""],[2,2,4]],[[""ToolKit"",""ItemGPS""],[1,1]],[[""B_Parachute""],[8]]],false]";
+							value="[[[[""arifle_MXC_F"",""FirstAidKit""],[2,2]],[[""SmokeShell"",""SmokeShellBlue"",""30Rnd_65x39_caseless_mag""],[2,2,4]],[[""ToolKit"",""ItemGPS""],[1,1]],[[],[]]],false]";
 						};
 					};
 				};

@@ -10,3 +10,7 @@ allowFunctionsRecompile = 1;
 class CfgFunctions {
     #include "Raynor\ActiveCamo\CfgFunctions.hpp"
 };
+class CfgSounds {
+    sounds[] = {};
+    #include "Raynor\ActiveCamo\CfgSounds.hpp"
+};

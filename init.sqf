@@ -1,1 +1,1 @@
-uh80 enableSimulation false;
+RaynorActiveCamo_debug = false;
