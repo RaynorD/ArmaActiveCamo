@@ -4,7 +4,6 @@ _pitchOffset = 0;
 _fovOffset = 0;
 
 _offsets = [
-    ["LandVehicle",0,-0.3],
     ["Heli_Attack_01_base_F",10,0]
 ];
 

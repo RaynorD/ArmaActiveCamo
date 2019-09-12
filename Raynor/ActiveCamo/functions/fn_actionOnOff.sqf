@@ -1,6 +1,12 @@
 params ["_object", "_caller", "_actionId", "_arguments"];
-
 _arguments params ["_state"];
+
+if (isNil "_object") exitWith {
+    ["Object was nil",true] call RaynorActiveCamo_fnc_log;
+};
+if (isNull _object) exitWith {
+    ["Object was null",true] call RaynorActiveCamo_fnc_log;
+};
 
 switch (_state) do {
     case (true): {

@@ -1,10 +1,16 @@
-params ["_object", ["_position",0,[0]], ["_silent",false,[true]]];
+params ["_object", ["_position",0,[0]],["_silent",false,[true]]];
 
-_object setVariable ["RaynorActiveCamo_cameraPosition", _position];
+if(isNil "_object") exitWith {
+    [format ["Object nil, can't update camera position: %1",_position],true] call RaynorActiveCamo_fnc_log;
+};
 
 if(isNull _object) exitWith {
     [format ["Object null, can't update camera position: %1",_position],true] call RaynorActiveCamo_fnc_log;
 };
+
+[format ["Receiving ground camera change: %1",_this]] call RaynorActiveCamo_fnc_log;
+
+_object setVariable ["RaynorActiveCamo_groundCamActual", _position];
 
 private _cam = _object getVariable ["RaynorActiveCamo_cam",objNull];
 
@@ -82,14 +88,5 @@ _cam camSetFov 0.3;
 _cam camCommit 0;
 
 if(!_silent) then {
-    if(isMultiplayer) then {
-        [_text] remoteExec ["vehicleChat",crew _object];
-    } else {
-        (vehicle player) vehicleChat _text;
-    };
+    (vehicle player) vehicleChat _text;
 };
-
-RaynorActiveCamo_update = [_object,_position];
-publicVariable "RaynorActiveCamo_update";
-
-// broadcast message to vehicle chat
